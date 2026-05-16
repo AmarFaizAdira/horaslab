@@ -1,0 +1,534 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>HorasLab — AI Branding untuk UMKM Batak</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400&family=DM+Sans:wght@300;400;500;600&family=Cinzel:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- NOISE OVERLAY -->
+  <div class="noise-overlay"></div>
+
+  <!-- NAV -->
+  <nav class="nav" id="navbar">
+    <div class="nav-inner">
+      <a href="#" class="logo">
+        <span class="logo-ulos">⬡</span>
+        HorasLab
+      </a>
+      <ul class="nav-links">
+        <li><a href="#tentang">Tentang</a></li>
+        <li><a href="#fitur">Fitur</a></li>
+        <li><a href="#bagaimana">Cara Kerja</a></li>
+        <li><a href="#demo">Demo AI</a></li>
+        <li><a href="#kontak" class="nav-cta">Mulai Gratis</a></li>
+      </ul>
+      <button class="burger" id="burger">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- MOBILE MENU -->
+  <div class="mobile-menu" id="mobileMenu">
+    <ul>
+      <li><a href="#tentang" onclick="closeMenu()">Tentang</a></li>
+      <li><a href="#fitur" onclick="closeMenu()">Fitur</a></li>
+      <li><a href="#bagaimana" onclick="closeMenu()">Cara Kerja</a></li>
+      <li><a href="#demo" onclick="closeMenu()">Demo AI</a></li>
+      <li><a href="#kontak" onclick="closeMenu()">Mulai Gratis</a></li>
+    </ul>
+  </div>
+
+  <!-- HERO -->
+  <section class="hero" id="hero">
+    <div class="hero-bg">
+      <svg class="ulos-pattern" viewBox="0 0 800 600" preserveAspectRatio="xMidYMid slice" xmlns="http://www.w3.org/2000/svg">
+        <defs>
+          <pattern id="ulos" x="0" y="0" width="80" height="80" patternUnits="userSpaceOnUse">
+            <rect width="80" height="80" fill="none"/>
+            <!-- Ulos geometric motif -->
+            <path d="M0,20 L20,0 L40,20 L20,40 Z" fill="rgba(212,160,74,0.12)"/>
+            <path d="M40,20 L60,0 L80,20 L60,40 Z" fill="rgba(212,160,74,0.08)"/>
+            <path d="M20,40 L40,20 L60,40 L40,60 Z" fill="rgba(212,160,74,0.10)"/>
+            <path d="M0,60 L20,40 L40,60 L20,80 Z" fill="rgba(212,160,74,0.07)"/>
+            <path d="M40,60 L60,40 L80,60 L60,80 Z" fill="rgba(212,160,74,0.09)"/>
+            <line x1="0" y1="0" x2="80" y2="80" stroke="rgba(212,160,74,0.04)" stroke-width="1"/>
+            <line x1="80" y1="0" x2="0" y2="80" stroke="rgba(212,160,74,0.04)" stroke-width="1"/>
+          </pattern>
+        </defs>
+        <rect width="100%" height="100%" fill="url(#ulos)"/>
+      </svg>
+      <div class="hero-glow glow-1"></div>
+      <div class="hero-glow glow-2"></div>
+    </div>
+    <div class="hero-content">
+      <div class="hero-badge">
+        <span class="badge-dot"></span>
+        Platform AI Cultural Branding #1 Sumatera Utara
+      </div>
+      <h1 class="hero-title">
+        <span class="title-batak">Horas.</span>
+        <span class="title-main">Branding UMKM Batak<br/>yang Berjiwa & Berdaya Saing</span>
+      </h1>
+      <p class="hero-desc">
+        HorasLab adalah platform AI yang mengubah kekayaan budaya Batak — ulos, filosofi Dalihan Na Tolu, dan cerita lokal — menjadi identitas merek modern yang memukau konsumen dan memenangkan pasar.
+      </p>
+      <div class="hero-actions">
+        <a href="#demo" class="btn-primary">Coba Demo AI Gratis</a>
+        <a href="#bagaimana" class="btn-ghost">Lihat Cara Kerja →</a>
+      </div>
+      <div class="hero-stats">
+        <div class="stat">
+          <strong>500+</strong>
+          <span>UMKM Terbantu</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat">
+          <strong>98%</strong>
+          <span>Kepuasan Pengguna</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat">
+          <strong>3x</strong>
+          <span>Peningkatan Penjualan</span>
+        </div>
+      </div>
+    </div>
+    <div class="hero-visual">
+      <div class="card-floating card-main">
+        <div class="card-top">
+          <div class="card-logo-preview">
+            <svg viewBox="0 0 60 60" width="48" height="48">
+              <polygon points="30,5 55,20 55,50 30,55 5,50 5,20" fill="#8B1A1A" stroke="#D4A04A" stroke-width="2"/>
+              <polygon points="30,15 45,23 45,43 30,47 15,43 15,23" fill="none" stroke="#D4A04A" stroke-width="1.5"/>
+              <text x="30" y="34" text-anchor="middle" fill="#D4A04A" font-size="10" font-family="serif" font-weight="bold">HL</text>
+            </svg>
+          </div>
+          <div>
+            <div class="card-brand-name">Roti Ulos Nainggolan</div>
+            <div class="card-tag">AI-Generated Brand</div>
+          </div>
+        </div>
+        <div class="card-palette">
+          <div class="swatch" style="background:#8B1A1A"></div>
+          <div class="swatch" style="background:#D4A04A"></div>
+          <div class="swatch" style="background:#F5E6C8"></div>
+          <div class="swatch" style="background:#2C1810"></div>
+          <span class="palette-label">Palet Warna Ulos</span>
+        </div>
+        <div class="card-tagline">"Cita Rasa Warisan Leluhur"</div>
+      </div>
+      <div class="card-floating card-secondary">
+        <div class="card-icon">🧵</div>
+        <div class="card-text">Motif ulos terdeteksi<br/><strong>Sibolang Pattern</strong></div>
+      </div>
+      <div class="card-floating card-tertiary">
+        <div class="card-icon">✨</div>
+        <div class="card-text">Brand Score<br/><strong class="score-val">94/100</strong></div>
+      </div>
+    </div>
+    <div class="scroll-indicator">
+      <span>Scroll</span>
+      <div class="scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- TENTANG -->
+  <section class="tentang" id="tentang">
+    <div class="container">
+      <div class="section-label">Mengapa HorasLab?</div>
+      <h2 class="section-title">Budaya Batak sebagai<br/>Kekuatan Kompetitif</h2>
+      <div class="tentang-grid">
+        <div class="tentang-problem">
+          <h3>Masalah yang Kami Selesaikan</h3>
+          <div class="problem-list">
+            <div class="problem-item">
+              <div class="problem-icon">📦</div>
+              <div>
+                <strong>Packaging Kurang Menarik</strong>
+                <p>73% UMKM Batak kehilangan pelanggan karena desain kemasan yang tidak profesional</p>
+              </div>
+            </div>
+            <div class="problem-item">
+              <div class="problem-icon">🏷️</div>
+              <div>
+                <strong>Identitas Merek Tidak Konsisten</strong>
+                <p>Tanpa branding yang kuat, produk lokal kalah bersaing dengan merek nasional</p>
+              </div>
+            </div>
+            <div class="problem-item">
+              <div class="problem-icon">🌿</div>
+              <div>
+                <strong>Nilai Budaya Belum Dimaksimalkan</strong>
+                <p>Kekayaan budaya Batak belum dimanfaatkan sebagai diferensiasi produk</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="tentang-solution">
+          <div class="solution-card">
+            <div class="solution-icon">
+              <svg viewBox="0 0 80 80" width="64" height="64">
+                <circle cx="40" cy="40" r="38" fill="none" stroke="#D4A04A" stroke-width="1.5" stroke-dasharray="4,4"/>
+                <polygon points="40,10 65,28 65,62 40,70 15,62 15,28" fill="#8B1A1A" opacity="0.9"/>
+                <polygon points="40,20 57,32 57,58 40,64 23,58 23,32" fill="none" stroke="#D4A04A" stroke-width="1.5"/>
+                <text x="40" y="46" text-anchor="middle" fill="#D4A04A" font-size="18" font-weight="bold" font-family="serif">AI</text>
+              </svg>
+            </div>
+            <h3>Solusi AI Cultural Branding</h3>
+            <p>HorasLab menggabungkan kecerdasan buatan dengan kekayaan budaya Batak untuk menciptakan identitas merek yang autentik, modern, dan berdaya saing tinggi.</p>
+            <div class="solution-tags">
+              <span>Motif Ulos</span>
+              <span>Dalihan Na Tolu</span>
+              <span>Storytelling Lokal</span>
+              <span>AI-Powered</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FITUR -->
+  <section class="fitur" id="fitur">
+    <div class="container">
+      <div class="section-label">Fitur Unggulan</div>
+      <h2 class="section-title">Semua yang Anda Butuhkan<br/>dalam Satu Platform</h2>
+      <div class="fitur-grid">
+
+        <div class="fitur-card fitur-large">
+          <div class="fitur-number">01</div>
+          <div class="fitur-icon-big">
+            <svg viewBox="0 0 100 100" width="80" height="80">
+              <defs>
+                <linearGradient id="g1" x1="0%" y1="0%" x2="100%" y2="100%">
+                  <stop offset="0%" style="stop-color:#D4A04A"/>
+                  <stop offset="100%" style="stop-color:#8B1A1A"/>
+                </linearGradient>
+              </defs>
+              <polygon points="50,10 80,28 80,72 50,90 20,72 20,28" fill="url(#g1)" opacity="0.2"/>
+              <polygon points="50,20 72,34 72,66 50,80 28,66 28,34" fill="none" stroke="#D4A04A" stroke-width="2"/>
+              <circle cx="50" cy="50" r="15" fill="#D4A04A" opacity="0.3"/>
+              <path d="M35,50 Q50,35 65,50 Q50,65 35,50" fill="#D4A04A"/>
+            </svg>
+          </div>
+          <h3>Generasi Nama & Logo Brand</h3>
+          <p>AI kami menganalisis jenis produk, nilai budaya, dan target pasar Anda untuk menghasilkan nama brand yang bermakna dan logo yang terinspirasi motif ulos Batak.</p>
+          <div class="fitur-output">
+            <div class="output-example">
+              <div class="output-label">Contoh Output:</div>
+              <div class="brand-preview">
+                <span class="brand-preview-name">Tano Niha Co.</span>
+                <span class="brand-preview-sub">— Tanah yang Berkah —</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="fitur-card">
+          <div class="fitur-number">02</div>
+          <h3>Desain Kemasan AI</h3>
+          <p>Rekomendasi desain packaging yang menggabungkan estetika modern dengan elemen visual budaya Batak untuk kemasan yang menonjol di rak toko.</p>
+          <div class="fitur-tags">
+            <span>Packaging Design</span>
+            <span>Label Produk</span>
+            <span>Visual Identity</span>
+          </div>
+        </div>
+
+        <div class="fitur-card">
+          <div class="fitur-number">03</div>
+          <h3>Storytelling Produk</h3>
+          <p>Narasi autentik yang menghubungkan produk Anda dengan filosofi Dalihan Na Tolu dan kearifan lokal untuk membangun ikatan emosional dengan konsumen.</p>
+          <div class="fitur-tags">
+            <span>Brand Story</span>
+            <span>Copywriting</span>
+            <span>Konten Sosmed</span>
+          </div>
+        </div>
+
+        <div class="fitur-card">
+          <div class="fitur-number">04</div>
+          <h3>Evaluasi Kekuatan Merek</h3>
+          <p>Analisis mendalam tentang identitas merek yang telah dibangun dengan skor dan rekomendasi peningkatan berbasis data pasar terkini.</p>
+          <div class="fitur-tags">
+            <span>Brand Audit</span>
+            <span>Skor Merek</span>
+            <span>Rekomendasi</span>
+          </div>
+        </div>
+
+        <div class="fitur-card">
+          <div class="fitur-number">05</div>
+          <h3>Edukasi Budaya Branding</h3>
+          <p>Panduan lengkap penggunaan elemen budaya Batak secara tepat dan etis dalam konteks branding modern untuk UMKM.</p>
+          <div class="fitur-tags">
+            <span>Panduan Ulos</span>
+            <span>Filosofi Brand</span>
+            <span>Workshop</span>
+          </div>
+        </div>
+
+        <div class="fitur-card fitur-highlight">
+          <div class="fitur-number">06</div>
+          <h3>Palet Warna Budaya</h3>
+          <p>Generator palet warna yang mengekstrak dan menginterpretasi warna-warna tradisional ulos menjadi palet brand yang modern.</p>
+          <div class="color-demo">
+            <div class="color-strip" style="background: linear-gradient(90deg, #8B1A1A, #D4A04A, #2C1810, #C17B2F, #5C1010)"></div>
+            <span>Ulos Sibolang Palette</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- CARA KERJA -->
+  <section class="bagaimana" id="bagaimana">
+    <div class="container">
+      <div class="section-label">Proses</div>
+      <h2 class="section-title">Dari Data ke Brand dalam<br/>Empat Langkah</h2>
+      <div class="steps">
+        <div class="step">
+          <div class="step-number">01</div>
+          <div class="step-connector"></div>
+          <div class="step-content">
+            <div class="step-icon">📝</div>
+            <h3>Input Data UMKM</h3>
+            <p>Masukkan informasi dasar: jenis produk, latar belakang usaha, nilai budaya yang ingin diangkat, dan target konsumen Anda.</p>
+          </div>
+        </div>
+        <div class="step">
+          <div class="step-number">02</div>
+          <div class="step-connector"></div>
+          <div class="step-content">
+            <div class="step-icon">🧠</div>
+            <h3>Analisis AI Cultural</h3>
+            <p>AI kami memproses data dengan database motif ulos, filosofi Batak, dan tren pasar untuk menemukan elemen budaya yang paling relevan.</p>
+          </div>
+        </div>
+        <div class="step">
+          <div class="step-number">03</div>
+          <div class="step-connector"></div>
+          <div class="step-content">
+            <div class="step-icon">✨</div>
+            <h3>Generasi Identitas Brand</h3>
+            <p>Platform menghasilkan nama brand, logo konsep, palet warna, dan narasi storytelling yang unik dan autentik untuk produk Anda.</p>
+          </div>
+        </div>
+        <div class="step">
+          <div class="step-number">04</div>
+          <div class="step-content">
+            <div class="step-icon">🚀</div>
+            <h3>Evaluasi & Implementasi</h3>
+            <p>Terima laporan evaluasi kekuatan merek dan panduan implementasi untuk mengaplikasikan identitas baru ke seluruh touchpoint bisnis.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- DEMO AI -->
+  <section class="demo" id="demo">
+    <div class="container">
+      <div class="section-label">Coba Sekarang</div>
+      <h2 class="section-title">Demo AI Branding<br/>Gratis untuk UMKM Anda</h2>
+      <div class="demo-wrapper">
+        <div class="demo-form">
+          <div class="form-group">
+            <label>Nama Usaha / Produk *</label>
+            <input type="text" id="inputNama" placeholder="contoh: Tenun Ulos Mama Sari" />
+          </div>
+          <div class="form-group">
+            <label>Jenis Produk *</label>
+            <select id="inputProduk">
+              <option value="">Pilih kategori...</option>
+              <option value="makanan">Makanan & Minuman</option>
+              <option value="kerajinan">Kerajinan & Tenun</option>
+              <option value="fashion">Fashion & Batik</option>
+              <option value="pertanian">Produk Pertanian</option>
+              <option value="kecantikan">Kecantikan & Herbal</option>
+              <option value="lainnya">Lainnya</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label>Nilai Budaya yang Ingin Diangkat</label>
+            <div class="checkbox-group">
+              <label class="checkbox-item">
+                <input type="checkbox" value="ulos" id="cbUlos"/>
+                <span>Motif Ulos</span>
+              </label>
+              <label class="checkbox-item">
+                <input type="checkbox" value="dalihan" id="cbDalihan"/>
+                <span>Dalihan Na Tolu</span>
+              </label>
+              <label class="checkbox-item">
+                <input type="checkbox" value="tor-tor" id="cbTortor"/>
+                <span>Tor-Tor & Gondang</span>
+              </label>
+              <label class="checkbox-item">
+                <input type="checkbox" value="toba" id="cbToba"/>
+                <span>Danau Toba</span>
+              </label>
+            </div>
+          </div>
+          <div class="form-group">
+            <label>Cerita Singkat Usaha Anda</label>
+            <textarea id="inputCerita" placeholder="Ceritakan asal-usul usaha Anda, tradisi keluarga, atau nilai yang ingin Anda sampaikan..." rows="3"></textarea>
+          </div>
+          <button class="btn-primary btn-full" id="generateBtn" onclick="generateBrand()">
+            <span id="btnText">✨ Generate Brand Saya</span>
+          </button>
+        </div>
+        <div class="demo-result" id="demoResult">
+          <div class="result-placeholder" id="resultPlaceholder">
+            <svg viewBox="0 0 120 120" width="80" height="80">
+              <polygon points="60,15 95,38 95,82 60,105 25,82 25,38" fill="none" stroke="#D4A04A" stroke-width="2" stroke-dasharray="6,4" opacity="0.5"/>
+              <polygon points="60,30 82,44 82,76 60,90 38,76 38,44" fill="none" stroke="#D4A04A" stroke-width="1.5" opacity="0.3"/>
+              <text x="60" y="68" text-anchor="middle" fill="#D4A04A" font-size="24" opacity="0.4">?</text>
+            </svg>
+            <p>Isi form di sebelah kiri dan klik "Generate Brand" untuk melihat rekomendasi AI untuk usaha Anda.</p>
+          </div>
+          <div class="result-content" id="resultContent" style="display:none;">
+            <div class="result-loading" id="resultLoading" style="display:none;">
+              <div class="loading-spinner"></div>
+              <p>AI sedang menganalisis budaya dan merancang brand Anda...</p>
+            </div>
+            <div class="result-output" id="resultOutput" style="display:none;"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TESTIMONIAL -->
+  <section class="testimonial">
+    <div class="container">
+      <div class="section-label">Kisah Sukses</div>
+      <h2 class="section-title">UMKM yang Telah<br/>Bertransformasi</h2>
+      <div class="testi-grid">
+        <div class="testi-card">
+          <div class="testi-quote">"</div>
+          <p>Setelah menggunakan HorasLab, penjualan keripik ulos saya naik 3x lipat. Packaging baru saya sekarang dijual di Bandara Kualanamu!</p>
+          <div class="testi-author">
+            <div class="testi-avatar">RS</div>
+            <div>
+              <strong>Rosalinda Situmorang</strong>
+              <span>Keripik Ulos Crispy, Medan</span>
+            </div>
+          </div>
+        </div>
+        <div class="testi-card testi-featured">
+          <div class="testi-quote">"</div>
+          <p>Brand storytelling dari HorasLab membuat produk tenun saya dikenal sampai ke Jakarta. Pelanggan tersentuh dengan cerita di balik setiap motif ulos yang saya jual.</p>
+          <div class="testi-author">
+            <div class="testi-avatar">BS</div>
+            <div>
+              <strong>Bintang Simanjuntak</strong>
+              <span>Tenun Tradisional Toba, Samosir</span>
+            </div>
+          </div>
+        </div>
+        <div class="testi-card">
+          <div class="testi-quote">"</div>
+          <p>Logo dan identitas brand yang dihasilkan AI benar-benar mencerminkan nilai keluarga kami. Pelanggan sering bertanya tentang makna motifnya!</p>
+          <div class="testi-author">
+            <div class="testi-avatar">LN</div>
+            <div>
+              <strong>Lasma Nainggolan</strong>
+              <span>Kopi Arabika Dolok Sanggul</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- KONTAK / CTA -->
+  <section class="kontak" id="kontak">
+    <div class="kontak-bg">
+      <svg viewBox="0 0 1200 400" preserveAspectRatio="xMidYMid slice" xmlns="http://www.w3.org/2000/svg">
+        <defs>
+          <pattern id="ulos2" x="0" y="0" width="60" height="60" patternUnits="userSpaceOnUse">
+            <path d="M0,15 L15,0 L30,15 L15,30 Z" fill="rgba(212,160,74,0.15)"/>
+            <path d="M30,15 L45,0 L60,15 L45,30 Z" fill="rgba(212,160,74,0.1)"/>
+            <path d="M15,30 L30,15 L45,30 L30,45 Z" fill="rgba(212,160,74,0.12)"/>
+            <path d="M0,45 L15,30 L30,45 L15,60 Z" fill="rgba(212,160,74,0.08)"/>
+            <path d="M30,45 L45,30 L60,45 L45,60 Z" fill="rgba(212,160,74,0.1)"/>
+          </pattern>
+        </defs>
+        <rect width="100%" height="100%" fill="url(#ulos2)"/>
+      </svg>
+    </div>
+    <div class="container">
+      <div class="kontak-content">
+        <div class="kontak-badge">Bergabung Sekarang</div>
+        <h2>Wujudkan Brand Batak<br/>yang Membanggakan</h2>
+        <p>Bergabunglah dengan ratusan UMKM Batak yang telah menggunakan HorasLab untuk membangun identitas merek yang kuat, modern, dan berakar pada budaya lokal.</p>
+        <div class="kontak-form">
+          <input type="email" id="emailInput" placeholder="Masukkan email Anda..." />
+          <button class="btn-primary" onclick="submitEmail()">Daftar Gratis</button>
+        </div>
+        <p class="kontak-note">Gratis 30 hari. Tidak perlu kartu kredit. Batalkan kapan saja.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="logo">
+            <span class="logo-ulos">⬡</span> HorasLab
+          </div>
+          <p>Platform AI Cultural Branding untuk UMKM Batak di Sumatera Utara. Melestarikan budaya melalui teknologi.</p>
+          <div class="footer-social">
+            <a href="#" aria-label="Instagram">Ig</a>
+            <a href="#" aria-label="Facebook">Fb</a>
+            <a href="#" aria-label="YouTube">Yt</a>
+            <a href="#" aria-label="TikTok">Tk</a>
+          </div>
+        </div>
+        <div class="footer-links">
+          <h4>Platform</h4>
+          <ul>
+            <li><a href="#">Brand Generator</a></li>
+            <li><a href="#">Desain Kemasan</a></li>
+            <li><a href="#">Storytelling AI</a></li>
+            <li><a href="#">Evaluasi Merek</a></li>
+          </ul>
+        </div>
+        <div class="footer-links">
+          <h4>Edukasi</h4>
+          <ul>
+            <li><a href="#">Panduan Ulos</a></li>
+            <li><a href="#">Filosofi Branding</a></li>
+            <li><a href="#">Workshop Online</a></li>
+            <li><a href="#">Blog</a></li>
+          </ul>
+        </div>
+        <div class="footer-links">
+          <h4>Perusahaan</h4>
+          <ul>
+            <li><a href="#">Tentang Kami</a></li>
+            <li><a href="#">Kontak</a></li>
+            <li><a href="#">Karier</a></li>
+            <li><a href="#">Kebijakan Privasi</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© 2025 HorasLab. Dibuat dengan ❤️ untuk UMKM Batak.</span>
+        <span class="footer-tagline">Horas! Maju Bersama Budaya.</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
